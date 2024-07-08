@@ -1,0 +1,11 @@
+rootProject.name = 'untitled87'
+include 'src:main:db'
+findProject(':src:main:db')?.name = 'db'
+include 'src:main:api'
+findProject(':src:main:api')?.name = 'api'
+include 'src:main:service'
+findProject(':src:main:service')?.name = 'service'
+include 'db'
+include 'service'
+include 'api'
+
